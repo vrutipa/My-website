@@ -1,0 +1,85 @@
+/*$main-font: 'Courier New', Courier, monospace;*/
+.body{
+  background-color:#FBA1B7;
+}
+.header{
+  text-align:center;
+}
+
+/*grid example*/
+.grid-container{
+  display:-moz-grid-line;
+  padding:1.5rem;
+  width:fit-content ;
+  border-style:ridge;
+  margin:0 auto;
+  font-size:16px;
+  background-color:#E48586;
+  font-family:'Times New Roman', Times, serif;
+}
+.image{
+  width:100px;
+  float:right;
+  border-radius:4px;
+  border:1px solid black;
+}
+.inside{
+  display:center;
+  padding:6.5px;
+  box-sizing:border-box;
+  text-align:center;
+  align:center;
+  margin:auto;
+  width:fit-content;
+}
+/* Placeholder*/
+.focus-example::placeholder {
+  font-style: italic;
+  font-variant: small-caps;
+  color: rgb(138, 43, 226);
+}
+/* Hover*/
+button:hover{
+  background-color:sandybrown;
+  color:white;
+}
+
+button{
+  background-color:white;
+  text-align:center;
+  cursor:pointer;
+  padding:5px 20px;
+  transition-duration: 0.5s;
+  margin:2px 2px;
+  display:fit-content; 
+}
+
+/* Animation fade-in */
+.fade-in {
+  animation: fade-in 3s forwards;
+}
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.h2{
+  font-size:15px;
+  font-style:bold;
+}
+.footer{
+  margin:20px 20px 0 0; 
+  float:left;
+  padding:20px;
+}
+@media{
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
